@@ -5,7 +5,7 @@ package org.jivesoftware.wildfire.net;
 
 import org.jivesoftware.util.LocaleUtils;
 import org.jivesoftware.util.Log;
-import com.sun.net.ssl.X509TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.security.cert.CertificateExpiredException;
 import java.security.cert.CertificateNotYetValidException;
 import java.security.cert.X509Certificate;

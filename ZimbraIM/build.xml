@@ -1,5 +1,5 @@
 <project name="ZimbraIM" default="jar"> <!-- default="jar" -->
-	<property name="javac.target" value="1.6"/>
+
 
 	<property name="jar.file" value="zimbraim.jar" />
 	<property name="src.dir" location="src" />
@@ -53,8 +53,9 @@
 	</path>
 
 	<target name="compile" depends="build-init" description="Compiles the source code">
-		<javac destdir="${build.classes.dir}" debug="true" classpathref="class.path" target="${javac.target}">
+		<javac destdir="${build.classes.dir}" debug="true" classpathref="class.path">
 			<src refid="all.java.path" />
+			<compilerarg line="--add-exports java.base/com.sun.net.ssl=ALL-UNNAMED"/>
 		</javac>
 	</target>
 

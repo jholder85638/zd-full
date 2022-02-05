@@ -22,7 +22,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.jar.JarOutputStream;
-import java.util.jar.Pack200;
 import java.util.zip.ZipFile;
 
 /**
@@ -943,7 +942,9 @@ public class PluginManager {
 
                 // The lib directory of the plugin may contain Pack200 versions of the JAR
                 // file. If so, unpack them.
-                unpackArchives(new File(dir, "lib"));
+//                unpackArchives(new File(dir, "lib"));
+                //TODO: reimplement using the apache commons compress lib
+                throw new Exception("Unsupported due to removal of Pack200.");
             }
             catch (Exception e) {
                 Log.error(e);
@@ -957,47 +958,47 @@ public class PluginManager {
          *
          * @param libDir the directory containing pack files.
          */
-        private void unpackArchives(File libDir) {
-            // Get a list of all packed files in the lib directory.
-            File [] packedFiles = libDir.listFiles(new FilenameFilter() {
-                public boolean accept(File dir, String name) {
-                    return name.endsWith(".pack");
-                }
-            });
-
-            if (packedFiles == null) {
-                // Do nothing since no .pack files were found
-                return;
-            }
-
-            // Unpack each.
-            for (File packedFile : packedFiles) {
-                try {
-                    String jarName = packedFile.getName().substring(0,
-                            packedFile.getName().length() - ".pack".length());
-                    // Delete JAR file with same name if it exists (could be due to upgrade
-                    // from old Wildfire release).
-                    File jarFile = new File(libDir, jarName);
-                    if (jarFile.exists()) {
-                        jarFile.delete();
-                    }
-
-                    InputStream in = new BufferedInputStream(new FileInputStream(packedFile));
-                    JarOutputStream out = new JarOutputStream(new BufferedOutputStream(
-                            new FileOutputStream(new File(libDir, jarName))));
-                    Pack200.Unpacker unpacker = Pack200.newUnpacker();
-                    // Call the unpacker
-                    unpacker.unpack(in, out);
-
-                    in.close();
-                    out.close();
-                    packedFile.delete();
-                }
-                catch (Exception e) {
-                    Log.error(e);
-                }
-            }
-        }
+//        private void unpackArchives(File libDir) {
+//            // Get a list of all packed files in the lib directory.
+//            File [] packedFiles = libDir.listFiles(new FilenameFilter() {
+//                public boolean accept(File dir, String name) {
+//                    return name.endsWith(".pack");
+//                }
+//            });
+//
+//            if (packedFiles == null) {
+//                // Do nothing since no .pack files were found
+//                return;
+//            }
+//
+//            // Unpack each.
+//            for (File packedFile : packedFiles) {
+//                try {
+//                    String jarName = packedFile.getName().substring(0,
+//                            packedFile.getName().length() - ".pack".length());
+//                    // Delete JAR file with same name if it exists (could be due to upgrade
+//                    // from old Wildfire release).
+//                    File jarFile = new File(libDir, jarName);
+//                    if (jarFile.exists()) {
+//                        jarFile.delete();
+//                    }
+//
+//                    InputStream in = new BufferedInputStream(new FileInputStream(packedFile));
+//                    JarOutputStream out = new JarOutputStream(new BufferedOutputStream(
+//                            new FileOutputStream(new File(libDir, jarName))));
+//                    Pack200.Unpacker unpacker = Pack200.newUnpacker();
+//                    // Call the unpacker
+//                    unpacker.unpack(in, out);
+//
+//                    in.close();
+//                    out.close();
+//                    packedFile.delete();
+//                }
+//                catch (Exception e) {
+//                    Log.error(e);
+//                }
+//            }
+//        }
 
         /**
          * Deletes a directory.

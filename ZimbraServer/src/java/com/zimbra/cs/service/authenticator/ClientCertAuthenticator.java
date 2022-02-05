@@ -15,6 +15,7 @@ import java.security.cert.CertificateExpiredException;
 import java.security.cert.CertificateNotYetValidException;
 import java.security.cert.X509Certificate;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 
@@ -93,7 +94,8 @@ public class ClientCertAuthenticator extends SSOAuthenticator {
             // Write in text form
             Writer wr = new OutputStreamWriter(os, Charset.forName("UTF-8"));
             wr.write("-----BEGIN CERTIFICATE-----\n");
-            wr.write(new sun.misc.BASE64Encoder().encode(buf));
+            String encodedString = Base64.getEncoder().encodeToString(buf);
+            wr.write(encodedString);
             wr.write("\n-----END CERTIFICATE-----\n");
             wr.flush();
             os.close();

@@ -3,7 +3,7 @@
  */
 package org.jivesoftware.wildfire.net;
 
-import com.sun.net.ssl.X509KeyManager;
+import javax.net.ssl.X509KeyManager;
 import java.net.Socket;
 import java.security.Principal;
 import java.security.PrivateKey;

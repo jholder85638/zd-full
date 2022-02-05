@@ -248,7 +248,7 @@
       <property name="zimbra.buildinfo.type" value="${offline.appid}"/>
       <property name="zimbra.buildinfo.release" value="${offline.name}"/>
     </ant>
-    <javac destdir="${build.classes.dir}" debug="true" classpathref="offline.class.path" target="1.6">
+    <javac destdir="${build.classes.dir}" debug="true" classpathref="offline.class.path">
       <src refid="all.java.path" />
     </javac>
   </target>
@@ -256,7 +256,7 @@
   <target name="offline-test-compile" depends="offline-compile">
 	<mkdir dir="${test.classes.dir}"/>
 	<javac srcdir="${test.src.dir}" destdir="${test.classes.dir}"
-		  debug="true" classpathref="offline.class.path" target="1.6"/>
+		  debug="true" classpathref="offline.class.path"/>
 	<copy todir="${test.classes.dir}">
 	  <fileset dir="${test.src.dir}" excludes="**/*.java"/>
 	</copy>
@@ -795,7 +795,7 @@
   </target>
 
   <target name="offline-make-dist">
-    <antcall target="offline-clean" />
+<!--    <antcall target="offline-clean" />-->
 
     <mkdir dir="${dist.dir}" />
     <untar src="${jetty.src.dir}/jetty-${jetty.version}.tar.gz" dest="${dist.dir}" overwrite="true" compression="gzip"/>
@@ -1441,7 +1441,7 @@
   </target>
 
   <target name="offline-jspc.compile">
-    <javac destdir="${jspc.build.dir}" optimize="on" debug="off" srcdir="${jspc.build.dir}" classpathref="jspc.class.path" target="1.6">
+    <javac destdir="${jspc.build.dir}" optimize="on" debug="off" srcdir="${jspc.build.dir}" classpathref="jspc.class.path">
       <include name="**"/>
     </javac>
   </target>

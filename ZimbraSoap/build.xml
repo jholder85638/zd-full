@@ -2,7 +2,7 @@
 
   <!-- Properties -->
 
-  <property name="javac.target" value="1.6"/>
+
   <property name="jar.file" value="zimbrasoap.jar" />
   <property name="src.java.dir" location="src/java" />
   <property name="build.dir" location="build" />
@@ -37,7 +37,7 @@
 
   <target name="compile" depends="build-init" description="Compiles the source code">
     <ant dir="${common.dir}" target="jar" inheritAll="false"/>
-    <javac destdir="${build.classes.dir}" debug="true" classpathref="class.path" target="${javac.target}">
+    <javac destdir="${build.classes.dir}" debug="true" classpathref="class.path">
       <src refid="all.java.path" />
     </javac>
   </target>
@@ -53,7 +53,7 @@
   <target name="test-compile" depends="compile">
     <mkdir dir="${test.classes.dir}"/>
     <javac srcdir="${test.src.dir}" destdir="${test.classes.dir}"
-      debug="true" classpathref="class.path" target="${javac.target}"/>
+      debug="true" classpathref="class.path"/>
     <copy todir="${test.classes.dir}">
       <fileset dir="${test.src.dir}" excludes="**/*.java"/>
     </copy>
