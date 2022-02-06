@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZimbraCommon/src/ZimbraCommon.iml" filepath="$PROJECT_DIR$/ZimbraCommon/src/ZimbraCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraIM/src/ZimbraIM.iml" filepath="$PROJECT_DIR$/ZimbraIM/src/ZimbraIM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraNative/src/java/ZimbraNative.iml" filepath="$PROJECT_DIR$/ZimbraNative/src/java/ZimbraNative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraOffline/src/ZimbraOffline.iml" filepath="$PROJECT_DIR$/ZimbraOffline/src/ZimbraOffline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraOfflineExt/src/ZimbraOfflineExt.iml" filepath="$PROJECT_DIR$/ZimbraOfflineExt/src/ZimbraOfflineExt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraServer/src/ZimbraServer.iml" filepath="$PROJECT_DIR$/ZimbraServer/src/ZimbraServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraSoap/src/ZimbraSoap.iml" filepath="$PROJECT_DIR$/ZimbraSoap/src/ZimbraSoap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraSyncClient/src/java/ZimbraSyncClient.iml" filepath="$PROJECT_DIR$/ZimbraSyncClient/src/java/ZimbraSyncClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraSyncCommon/src/ZimbraSyncCommon.iml" filepath="$PROJECT_DIR$/ZimbraSyncCommon/src/ZimbraSyncCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraTagLib/src/ZimbraTagLib.iml" filepath="$PROJECT_DIR$/ZimbraTagLib/src/ZimbraTagLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZimbraWebClient/src/ZimbraWebClient.iml" filepath="$PROJECT_DIR$/ZimbraWebClient/src/ZimbraWebClient.iml" />
+    </modules>
+  </component>
+</project>

@@ -8,6 +8,7 @@ import java.io.Reader;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
 
 public class HtmlTextExtractor extends org.xml.sax.helpers.DefaultHandler {
     private StringBuilder sb = new StringBuilder(1024);

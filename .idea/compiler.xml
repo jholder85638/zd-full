@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/ZimbraOffline/src/java/com/zimbra/cs/account/offline/TestVersion.java" />
+    </excludeFromCompile>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ZimbraCommon" options="--add-exports java.base/sun.security.util=ALL-UNNAMED" />
+      <module name="ZimbraSyncCommon" options="--add-exports java.xml/com.sun.org.apache.xerces.internal.impl.dv.util=ALL-UNNAMED" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gifencoder">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/gifencoder.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

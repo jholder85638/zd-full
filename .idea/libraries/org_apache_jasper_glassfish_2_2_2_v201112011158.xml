@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.apache.jasper.glassfish-2.2.2.v201112011158">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/org.apache.jasper.glassfish-2.2.2.v201112011158.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jetty-rewrite-handler-6.1.22.z6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/jetty-rewrite-handler-6.1.22.z6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -7,6 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="activation-1.1.1" level="project" />
+    <orderEntry type="library" name="openfire" level="project" />
+    <orderEntry type="module" module-name="ZimbraCommon" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="bcprov-jdk15-146" level="project" />
+    <orderEntry type="library" name="commons-dbcp-1.4" level="project" />
   </component>
 </module>

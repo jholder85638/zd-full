@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="yuicompressor-2.4.2-zimbra">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/yuicompressor-2.4.2-zimbra.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

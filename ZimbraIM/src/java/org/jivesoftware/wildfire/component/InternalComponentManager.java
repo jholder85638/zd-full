@@ -4,6 +4,7 @@
 package org.jivesoftware.wildfire.component;
 
 import org.dom4j.Element;
+import org.jivesoftware.openfire.IQResultListener;
 import org.jivesoftware.util.IMConfig;
 import org.jivesoftware.util.Log;
 import org.jivesoftware.wildfire.PacketException;
@@ -152,6 +153,16 @@ public class InternalComponentManager implements ComponentManager, RoutableChann
         if (router != null) {
             router.route(packet);
         }
+    }
+
+    @Override
+    public IQ query(Component component, IQ iq, int i) throws ComponentException {
+        return null;
+    }
+
+    @Override
+    public void query(Component component, IQ iq, IQResultListener iqResultListener) throws ComponentException {
+
     }
 
     /**

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-test" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/java-test" />
+      <excludeFolder url="file://$MODULE_DIR$/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/db" />
+      <excludeFolder url="file://$MODULE_DIR$/installer" />
+      <excludeFolder url="file://$MODULE_DIR$/mailto" />
+      <excludeFolder url="file://$MODULE_DIR$/zimlet" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="ZimbraCommon" />
+    <orderEntry type="module" module-name="ZimbraServer" />
+    <orderEntry type="library" name="dom4j-1.5.2" level="project" />
+    <orderEntry type="library" name="mail" level="project" />
+    <orderEntry type="library" name="guava-r09" level="project" />
+    <orderEntry type="library" name="gdata-core-1.0" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../ZimbraCommon/jars/junit-3.8.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="derby" level="project" />
+    <orderEntry type="library" name="commons-dbcp-1.4" level="project" />
+    <orderEntry type="library" name="activation-1.1.1" level="project" />
+    <orderEntry type="library" name="commons-httpclient-3.1" level="project" />
+    <orderEntry type="library" name="gdata-contacts-3.0" level="project" />
+    <orderEntry type="library" name="gdata-client-1.0" level="project" />
+    <orderEntry type="library" name="commons-pool-1.5.5" level="project" />
+    <orderEntry type="library" name="ant-tar-patched" level="project" />
+    <orderEntry type="library" name="ant-1.7.0-ziputil-patched" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../ZimbraCommon/jars/junit-4.13.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../ZimbraCommon/jars/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="log4j-1.2.16" level="project" />
+    <orderEntry type="library" name="json" level="project" />
+  </component>
+</module>

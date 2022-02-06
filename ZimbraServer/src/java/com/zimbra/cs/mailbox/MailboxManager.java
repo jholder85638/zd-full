@@ -161,18 +161,18 @@ public class MailboxManager {
      *  <code>Mailbox</code> can process user requests. */
     private MailboxMap mMailboxCache;
 
-    public MailboxManager() throws ServiceException {
-        Connection conn = null;
-        synchronized (this) {
-            try {
-                conn = DbPool.getConnection();
-                mMailboxIds = DbMailbox.listMailboxes(conn, this);
-                mMailboxCache = createCache();
-            } finally {
-                DbPool.quietClose(conn);
-            }
-        }
-    }
+//    public MailboxManager() throws ServiceException {
+//        Connection conn = null;
+//        synchronized (this) {
+//            try {
+//                conn = DbPool.getConnection();
+//                mMailboxIds = DbMailbox.listMailboxes(conn, this);
+//                mMailboxCache = createCache();
+//            } finally {
+//                DbPool.quietClose(conn);
+//            }
+//        }
+//    }
 
     protected MailboxMap createCache() {
         return new MailboxMap(LC.zimbra_mailbox_manager_hardref_cache.intValue());
@@ -204,7 +204,7 @@ public class MailboxManager {
                 }
             }
             if (sInstance == null)
-                sInstance = new MailboxManager();
+                sInstance = new MailboxManager(true);
         }
         return sInstance;
     }
@@ -239,7 +239,7 @@ public class MailboxManager {
      *  if one doesn't already exist and <code>autocreate</code> is
      *  <tt>true</tt>.
      *
-     * @param accountId   The id of the account whose mailbox we want.
+     * @param //accountId   The id of the account whose mailbox we want.
      * @param autocreate  <tt>true</tt> to create the mailbox if needed,
      *                    <tt>false</tt> to just return <code>null</code>
      * @return The requested <code>Mailbox</code> object, or <code>null</code>.
@@ -257,7 +257,7 @@ public class MailboxManager {
      *  mailbox if one doesn't already exist and <code>fetchMode</code>
      *  is <code>FetchMode.AUTOCREATE</code>.
      *
-     * @param accountId   The id of the account whose mailbox we want.
+     * @param //accountId   The id of the account whose mailbox we want.
      * @param fetchMode <code>FetchMode.ONLY_IF_CACHED</code> will return the mailbox only
      *                     if it is already cached in memory
      *                  <code>FetchMode.DO_NOT_AUTOCREATE</code>Will fetch the mailbox from
@@ -477,7 +477,7 @@ public class MailboxManager {
                         DbPool.quietClose(conn);
                 }
             }
-            
+
             mbox = instantiateMailbox(data);
             Account account = mbox.getAccount();
             boolean isGalSyncAccount = AccountUtil.isGalSyncAccount(account);
@@ -523,19 +523,19 @@ public class MailboxManager {
     /** @return A list of *hard references* to all currently-loaded mailboxes which are not
      *     .   in MAINTENANCE mode.  Caller must be careful to not hang onto this list for
      *         very long or else mailboxes will not be purged. */
-    public synchronized List<Mailbox> getAllLoadedMailboxes() {
-        List<Mailbox> mboxes = new ArrayList<Mailbox>(mMailboxCache.size());
-        for (Object o : mMailboxCache.values()) {
-            if (o instanceof Mailbox) {
-                mboxes.add((Mailbox) o);
-            } else if (o instanceof MailboxLock) {
-                MailboxLock lock = (MailboxLock) o;
-                if (lock.canAccess())
-                    mboxes.add(lock.getMailbox());
-            }
-        }
-        return mboxes;
-    }
+//    public synchronized List<Mailbox> getAllLoadedMailboxes() {
+//        List<Mailbox> mboxes = new ArrayList<Mailbox>(mMailboxCache.size());
+//        for (Object o : mMailboxCache.values()) {
+//            if (o instanceof Mailbox) {
+//                mboxes.add((Mailbox) o);
+//            } else if (o instanceof MailboxLock) {
+//                MailboxLock lock = (MailboxLock) o;
+//                if (lock.canAccess())
+//                    mboxes.add(lock.getMailbox());
+//            }
+//        }
+//        return mboxes;
+//    }
 
     /**
      * @return the number of hard references to currently-loaded mailboxes, either in
@@ -552,7 +552,6 @@ public class MailboxManager {
     }
 
     /**
-     * @param mailboxId
      * @return TRUE if the specified mailbox is in-memory and not in maintenance mode,
      *         if false, then caller can assume that one of the @link{Listener} APIs
      *         be called for this mailbox at some point in the future, if this mailbox
@@ -781,7 +780,8 @@ public class MailboxManager {
      *    <li><code>service.FAILURE</code> - if there's a database failure
      *    <li><code>service.WRONG_HOST</code> - if the Account's mailbox
      *        lives on a different host</ul>
-     * @see #initialize() */
+     * @see #
+     * */
     public Mailbox createMailbox(OperationContext octxt, Account account) throws ServiceException {
         return createMailbox(octxt, account, false);
     }
@@ -798,7 +798,7 @@ public class MailboxManager {
         do {
             if (mailboxKey != null)
                 return getMailboxById(mailboxKey);
-            
+
             boolean isGalSyncAccount = AccountUtil.isGalSyncAccount(account);
             synchronized (this) {
                 // check to make sure the mailbox doesn't already exist
@@ -891,19 +891,19 @@ public class MailboxManager {
         notifyMailboxDeleted(accountId);
     }
 
-    public void dumpMailboxCache() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("MAILBOX CACHE DUMPS\n");
-        sb.append("----------------------------------------------------------------------\n");
-        synchronized (this) {
-            for (Map.Entry<String, Integer> entry : mMailboxIds.entrySet())
-                sb.append("1) key=" + entry.getKey() + " (hash=" + entry.getKey().hashCode() + "); val=" + entry.getValue() + "\n");
-            for (Map.Entry<Integer, Object> entry : mMailboxCache.entrySet())
-                sb.append("2) key=" + entry.getKey() + "; val=" + entry.getValue() + "(class= " + entry.getValue().getClass().getName() + ",hash=" + entry.getValue().hashCode() + ")");
-        }
-        sb.append("----------------------------------------------------------------------\n");
-        ZimbraLog.mailbox.debug(sb.toString());
-    }
+//    public void dumpMailboxCache() {
+//        StringBuilder sb = new StringBuilder();
+//        sb.append("MAILBOX CACHE DUMPS\n");
+//        sb.append("----------------------------------------------------------------------\n");
+//        synchronized (this) {
+//            for (Map.Entry<String, Integer> entry : mMailboxIds.entrySet())
+//                sb.append("1) key=" + entry.getKey() + " (hash=" + entry.getKey().hashCode() + "); val=" + entry.getValue() + "\n");
+//            for (Map.Entry<Integer, Object> entry : mMailboxCache.entrySet())
+//                sb.append("2) key=" + entry.getKey() + "; val=" + entry.getValue() + "(class= " + entry.getValue().getClass().getName() + ",hash=" + entry.getValue().hashCode() + ")");
+//        }
+//        sb.append("----------------------------------------------------------------------\n");
+//        ZimbraLog.mailbox.debug(sb.toString());
+//    }
 
 
     protected static class MailboxMap implements Map<Integer, Object> {
@@ -916,7 +916,7 @@ public class MailboxManager {
             mHardSize = hardSize;
             mSoftMap = new HashMap<Integer, Object>();
             mHardMap = new LinkedHashMap<Integer, Object>(mHardSize / 4, (float) .75, true) {
-                @Override protected boolean removeEldestEntry(Entry<Integer, Object> eldest) {
+                protected boolean removeEldestEntry(Map.Entry<Integer, Object> eldest) {
                     if (size() <= mHardSize)
                         return false;
 

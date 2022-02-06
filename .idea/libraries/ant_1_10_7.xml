@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ant-1.10.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/ant-1.10.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

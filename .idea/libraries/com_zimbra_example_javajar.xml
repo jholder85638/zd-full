@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com_zimbra_example_javajar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Zimlet/src/zimlet/com_zimbra_example_javajar/zimlet-java-example.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Zimlet/src/zimlet/com_zimbra_example_javajar/javajarexample-eclipse-project.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

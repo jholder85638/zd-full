@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc25bcf7-26cb-4429-a533-11a4be796d5f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/ant-1.10.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/freemarker-2.3.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/gdata-client-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/gdata-client-meta-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/gdata-contacts-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/gdata-contacts-meta-3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/gdata-core-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/gdata-src.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/junit-3.8.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/junit-4.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/openfire.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZimbraCommon/jars/org.apache.jasper.glassfish-2.2.2.v201112011158.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraCommon/src/ZimbraCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraCommon/src/ZimbraCommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraCommon/src/java/com/zimbra/common/util/HtmlTextExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraCommon/src/java/com/zimbra/common/util/HtmlTextExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraIM/src/ZimbraIM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraIM/src/ZimbraIM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraIM/src/java/org/jivesoftware/database/DbConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraIM/src/java/org/jivesoftware/database/DbConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraIM/src/java/org/jivesoftware/wildfire/component/InternalComponentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraIM/src/java/org/jivesoftware/wildfire/component/InternalComponentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraNative/src/java/ZimbraNative.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraNative/src/java/ZimbraNative.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/jars/gdata-client-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/jars/gdata-client-meta-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/jars/gdata-contacts-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/jars/gdata-contacts-meta-3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/jars/gdata-core-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/jars/gdata-src.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/src/java/com/zimbra/cs/account/offline/OfflineProvisioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraOffline/src/java/com/zimbra/cs/account/offline/OfflineProvisioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraOffline/src/java/com/zimbra/cs/mailbox/OfflineMailboxManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraOffline/src/java/com/zimbra/cs/mailbox/OfflineMailboxManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraServer/src/ZimbraServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraServer/src/ZimbraServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/account/Provisioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/account/Provisioning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/mailbox/Mailbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/mailbox/Mailbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/mailbox/MailboxManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/mailbox/MailboxManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/mailclient/smtp/SmtpConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraServer/src/java/com/zimbra/cs/mailclient/smtp/SmtpConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZimbraWebClient/src/com/zimbra/jsapi/JsInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZimbraWebClient/src/com/zimbra/jsapi/JsInventory.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24fV4gVTxDAOM71dSgqr5QS25bq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path" value="C:\Users\John Holder\Documents\Repos\zd-full\ZimbraCommon\jars" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ZimbraCommon/jars/gdata-client-1.0.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\John Holder\Documents\Repos\zd-full\ZimbraOffline\src\java\com\zimbra" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc25bcf7-26cb-4429-a533-11a4be796d5f" name="Changes" comment="" />
+      <created>1644021439299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644021439299</updated>
+      <workItem from="1644021441019" duration="1803000" />
+      <workItem from="1644023421406" duration="3000" />
+      <workItem from="1644023438975" duration="315000" />
+      <workItem from="1644023781163" duration="5000" />
+      <workItem from="1644026916238" duration="8617000" />
+      <workItem from="1644036393611" duration="29000" />
+      <workItem from="1644036436185" duration="36036000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+</project>

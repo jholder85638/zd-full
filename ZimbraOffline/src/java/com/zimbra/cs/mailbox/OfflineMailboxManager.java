@@ -29,7 +29,7 @@ public class OfflineMailboxManager extends MailboxManager {
     }
 
     public OfflineMailboxManager() throws ServiceException {
-        super();
+        super(false);
     }
 
     /** Returns a new {@link ZcsMailbox} object to wrap the given data. */

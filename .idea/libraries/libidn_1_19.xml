@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libidn-1.19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/libidn-1.19.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

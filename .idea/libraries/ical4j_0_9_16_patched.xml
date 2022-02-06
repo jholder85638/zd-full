@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ical4j-0.9.16-patched">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/ical4j-0.9.16-patched.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

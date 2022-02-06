@@ -2728,7 +2728,6 @@ public class OfflineProvisioning extends Provisioning implements OfflineConstant
 
     /**
      * Get auth token for proxying. Only implemented in OfflineProvisioning
-     * @param targetAcctId - the account we are proxying to
      * @param originalContext - the original request context. Used internally to ensure proxy token is obtained for correct mountpoint account
      */
     @Override

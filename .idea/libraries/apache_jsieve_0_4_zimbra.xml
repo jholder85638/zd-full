@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apache-jsieve-0.4-zimbra">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/apache-jsieve-0.4-zimbra.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

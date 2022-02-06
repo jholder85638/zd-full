@@ -205,6 +205,7 @@ import com.zimbra.cs.zclient.ZMailbox.Options;
 /**
  * @since Jun 13, 2004
  */
+@SuppressWarnings("ALL")
 public class Mailbox {
 
     /* these probably should be ints... */
@@ -1116,7 +1117,7 @@ public class Mailbox {
      *  can be:<ul>
      *    <li>The {@link Blob} or {@link MailboxBlob} for a newly-created file.
      *    <li>The {@link PendingDelete} holding blobs and index
-     *        entries to be cleaned up after a {@link MailItem#deletes}.
+     *        entries to be cleaned up after a {@link MailItem#}.
      *    <li>The SHA1 hash of a conversation's subject stored in
      *        {@link #mConvHashes}.</ul>
      *
@@ -1212,7 +1213,7 @@ public class Mailbox {
      *  to the search index of this Mailbox.
      *
      * @return A new MailboxLock token for use in a subsequent call to
-     *         {@link MailboxManager#endMaintenance(Mailbox.MailboxLock, boolean, boolean)}.
+     *         {@link MailboxManager#(Mailbox, boolean, boolean)}.
      * @throws ServiceException MailServiceException.MAINTENANCE if the
      *         <tt>Mailbox</tt> is already in maintenance mode. */
     synchronized MailboxLock beginMaintenance() throws ServiceException {
@@ -1517,7 +1518,7 @@ public class Mailbox {
      *  This method does <u>not</u> have hooks for inserting arbitrary folders,
      *  tags, or messages into a new mailbox.
      *
-     * @see Folder#create(int, Mailbox, Folder, String, byte, byte, int, byte, String) */
+     * @see Folder */
     protected synchronized void initialize() throws ServiceException {
         // the new mailbox's caches are created and the default set of tags are
         // loaded by the earlier call to loadFoldersAndTags in beginTransaction
@@ -2792,8 +2793,8 @@ public class Mailbox {
 
     /** Returns the IDs of all items modified since a given change number.
      *  Will not return modified folders or tags; for these you need to call
-     *  {@link #getModifiedFolders(long, byte)} or
-     *  {@link #getModifiedTags(OperationContext, long)}.  Modified items not
+     *  {@link #(long, byte)} or
+     *  {@link #(OperationContext, long)}.  Modified items not
      *  visible to the caller (i.e. the caller lacks {@link ACL#RIGHT_READ})
      *  are returned in a separate Integer List in the returned Pair.
      *
@@ -2810,8 +2811,8 @@ public class Mailbox {
 
     /** Returns the IDs of all items of the given type modified since a given
      *  change number.  Will not return modified folders or tags; for these
-     *  you need to call {@link #getModifiedFolders(long, byte)} or
-     *  {@link #getModifiedTags(OperationContext, long)}.  Modified items not
+     *  you need to call {@link #(long, byte)} or
+     *  {@link #(OperationContext, long)}.  Modified items not
      *  visible to the caller (i.e. the caller lacks {@link ACL#RIGHT_READ})
      *  are returned in a separate Integer List in the returned Pair.  When
      *  <tt>type</tt> is {@link MailItem#TYPE_UNKNOWN}, all modified non-
@@ -3497,7 +3498,6 @@ public class Mailbox {
 
     /**
      * Returns list of mail items which are older than specified cutoff time.
-     * @param mbox
      * @param folder
      * @param cutoffTime
      * @return

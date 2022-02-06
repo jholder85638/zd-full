@@ -263,7 +263,6 @@ public abstract class Provisioning extends ZAttrProvisioning {
      * is cached.  For LdapProvisionig, each LDAP related method will cost one or more LDAP 
      * trips.  The only usage for useCache=false is zmconfigd. (bug 70975 and 71267)
      * 
-     * @param useCache 
      * @return
      */
     public synchronized static Provisioning getInstance(CacheMode cacheMode) {
@@ -328,7 +327,6 @@ public abstract class Provisioning extends ZAttrProvisioning {
      *     in which case a multi-valued attr is updated</li>
      * </ul>
      *
-     * Calls {@link #modifyAttrs(Map, boolean)} with <code>checkImmutable=false</code>.
      */
     public void modifyAttrs(Entry e, Map<String, ? extends Object> attrs) throws ServiceException
     {
@@ -640,7 +638,6 @@ public abstract class Provisioning extends ZAttrProvisioning {
      *
      * @param emailAddress email address (domain must already exist) of account being created.
      * @param password password of account being created, or null. Account's without passwords can't be logged into.
-     * @param accountStatus the initial account status
      * @param attrs other initial attributes or <code>null</code>
      * @return
      * @throws ServiceException

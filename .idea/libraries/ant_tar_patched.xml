@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ant-tar-patched">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/ant-tar-patched.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

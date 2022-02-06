@@ -60,7 +60,6 @@ public	class	JsInventory {
 	/**
 	 * Creates the inventory.
 	 * 
-	 * @param	investoryFile	the location of the inventory ZIP file
 	 * @return	the newly created inventory
 	 */
 	public	static	JsInventory	create(String inventoryFile)
@@ -83,7 +82,6 @@ public	class	JsInventory {
 	/**
 	 * Loads the classes list for into the inventory.
 	 * 
-	 * @param	inventory		the inventory
 	 * @param	zipFile			the inventory bundle to read
 	 * @return	the inventory
 	 */
@@ -193,7 +191,6 @@ public	class	JsInventory {
 	 * Reads the entry as a string.
 	 * 
 	 * @param	zipFile		the zip file
-	 * @param	entry		the zip entry to read
 	 * @return	the string
 	 */
 	private	static	String	readEntryAsString(ZipFile zipFile, ZipEntry zipEntry)
@@ -307,7 +304,6 @@ public	class	JsInventory {
 	/**
 	 * Generates a map of added and removed class differences between the two inventories.
 	 * 
-	 * @param	prevInventory		the previous inventory
 	 * @param	currentInventory		the current inventory
 	 * @return	a map of added and removed classes
 	 */
@@ -345,7 +341,6 @@ public	class	JsInventory {
 	/**
 	 * Generates a list of modified class differences between the two inventories.
 	 * 
-	 * @param	prevInventory		the previous inventory
 	 * @param	currentInventory		the current inventory
 	 * @return	a list of modified classes
 	 */

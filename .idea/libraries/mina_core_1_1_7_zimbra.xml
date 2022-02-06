@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mina-core-1.1.7-zimbra">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/mina-core-1.1.7-zimbra.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

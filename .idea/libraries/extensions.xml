@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="extensions">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraOffline/src/installer/win64/extensions/zimbramapi-0.8.zip!/" />
+      <root url="jar://$PROJECT_DIR$/ZimbraOffline/src/installer/win64/extensions/zimbramapi-0.7.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

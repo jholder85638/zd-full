@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jetty-6.1.22.z6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ZimbraCommon/jars/jetty-6.1.22.z6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

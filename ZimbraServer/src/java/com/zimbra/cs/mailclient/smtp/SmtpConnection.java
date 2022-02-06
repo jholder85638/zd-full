@@ -354,7 +354,7 @@ public final class SmtpConnection extends MailConnection {
                         throw new SaslException("SASL client auth not complete yet S: " + reply.toString());
                     }
                 case 334: // continue
-                    byte[] challenge = Strings.isNullOrEmpty(reply.text) ? new byte[0] : Base64.decodeBase64(reply.text);
+                    byte[] challenge = Strings.isNullOrEmpty(reply.text) ? new byte[0] : Base64.decodeBase64(reply.text.getBytes());
                     byte[] response = authenticator.evaluateChallenge(challenge);
                     if (response != null) {
                         reply = sendCommand(Ascii.toString(Base64.encodeBase64(response)), null);
